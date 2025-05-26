@@ -1,0 +1,158 @@
+header{
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    padding: 1.0rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        @include sp{
+            width: 60%;
+        }
+    }
+
+    .conv_btn{
+        margin: 0 0;
+        @include sp{
+            width: 40%;
+            padding: 0.5rem 0.5rem;
+            background: $orange;
+        }
+    }
+}
+
+#main_visual{
+    position: relative;
+    .txt{
+        max-width: 460px;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        @include tab{
+            max-width: 300px;
+        }
+        @include sp{
+            margin: 0 auto;
+            top: 20%;
+            left: 1%;
+            right: 1%;
+        }
+    }
+}
+
+ul.checkmark{
+    margin: 30px auto;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    @include sp{
+        font-size: 14px;
+    }
+    li{
+        margin-bottom: 10px;
+        &:before{
+            display: inline-block;
+            content: url(../images/check_icon.svg);
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            @include sp{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}
+
+.col2{
+    text-align: justify;
+    .txt{
+        padding: 4.0rem;
+        @include sp{
+            padding: 2.0rem;
+        }
+        h4{
+            color: $orange;
+        }
+        .en{
+            font-size: 50px;
+            text-align: right;
+            color: $green;
+        }
+    }
+    @include sp{
+        &:nth-child(even){
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+#info{
+    dl{
+        max-width: $sp_w;
+        margin: 0 auto;
+        padding: 1.0rem;
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: left;
+        border-bottom: 1px dashed #000;
+        font-size: 16px;
+        @include sp{
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+        dt{
+            width: 20%;
+            color: $orange;
+            @include sp{
+                width: 100%;
+            }
+        }
+        dd{
+            width: 70%;
+            @include sp{
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    margin-top: 60px;
+    padding: 1.0rem;
+    background: $green;
+    background-image: url(../images/footer_img.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    @include sp{
+        background-size: 200%;
+    }
+
+    nav{
+        max-width: $base_w;
+        margin: 60px auto 120px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        @include sp{
+            margin:  60px auto 60px;
+            flex-wrap: wrap;
+            a{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    address{
+        font-size: 10px;
+        font-style: normal;
+    }
+}
