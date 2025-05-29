@@ -141,9 +141,11 @@ footer{
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        font-size: 16px;
         @include sp{
             margin:  60px auto 60px;
             flex-wrap: wrap;
+            font-size: 14px;
             a{
                 width: 100%;
                 margin-bottom: 20px;

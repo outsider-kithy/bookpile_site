@@ -3,3 +3,7 @@
 @import 'mixin';
 @import 'common';
 @import 'layout';
+
+.lower{
+    @import 'lower';
+}

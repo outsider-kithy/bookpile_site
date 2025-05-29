@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -53,6 +52,10 @@ select {
 
 table {
   display: block;
+}
+
+ul {
+  list-style: inside;
 }
 
 html, body {
@@ -395,11 +398,13 @@ footer nav {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
 }
 @media screen and (max-width: 740px) {
   footer nav {
     margin: 60px auto 60px;
     flex-wrap: wrap;
+    font-size: 14px;
   }
   footer nav a {
     width: 100%;
@@ -409,4 +414,46 @@ footer nav {
 footer address {
   font-size: 10px;
   font-style: normal;
+}
+
+.lower main {
+  margin-top: 120px;
+  text-align: left;
+}
+.lower h2 {
+  font-size: 24px;
+  line-height: 2em;
+}
+@media screen and (max-width: 740px) {
+  .lower h2 {
+    font-size: 18px;
+  }
+}
+.lower h3 {
+  font-size: 20px;
+  line-height: 2em;
+  margin-top: 30px;
+}
+@media screen and (max-width: 740px) {
+  .lower h3 {
+    font-size: 16px;
+  }
+}
+.lower p {
+  font-size: 16px;
+  line-height: 2em;
+}
+@media screen and (max-width: 740px) {
+  .lower p {
+    font-size: 14px;
+  }
+}
+.lower ul {
+  font-size: 16px;
+  line-height: 2em;
+}
+@media screen and (max-width: 740px) {
+  .lower ul {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

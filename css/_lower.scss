@@ -1,0 +1,36 @@
+main{
+    margin-top: 120px;
+    text-align: left;
+}
+
+h2{
+    font-size: 24px;
+    line-height: 2.0em;
+    @include sp{
+        font-size: 18px;
+    }
+}
+h3{
+    font-size: 20px;
+    line-height: 2.0em;
+    margin-top: 30px;
+    @include sp{
+        font-size: 16px;
+    }
+}
+
+p{
+    font-size: 16px;
+    line-height: 2.0em;
+    @include sp{
+        font-size: 14px;
+    }
+}
+
+ul{
+    font-size: 16px;
+    line-height: 2.0em;
+    @include sp{
+        font-size: 14px;
+    }
+}
